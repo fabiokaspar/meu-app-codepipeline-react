@@ -1,0 +1,24 @@
+/* src/App.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #61dafb;
+}

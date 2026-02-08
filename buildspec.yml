@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo Entrando na fase de instalação...
+      - npm ci
+  pre_build:
+    commands:
+      - echo Entrando na fase de pré-construção...
+      - npm run lint
+  build:
+    commands:
+      - echo Entrando na fase de construção...
+      - npm run build
+  post_build:
+    commands:
+      - echo A construção foi concluída com sucesso!
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
